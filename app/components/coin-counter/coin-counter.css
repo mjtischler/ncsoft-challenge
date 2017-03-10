@@ -1,0 +1,24 @@
+/* MT: Ideally, this would be a LESS or SASS file. However, for speed of development I'm running this from a local http server without Grunt or Gulp build tasks. */
+
+.coin-counter-title {
+    text-align: center;
+}
+
+.coin-counter-circle {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    font-size: 28px;
+    color: #878787;
+    line-height: 120px;
+    text-align: center;
+    background: #d8d8d8;
+}
+
+.coin-counter-input-container,
+.coin-counter-button-container {
+    text-align: center;
+}
+
+@media (min-width: 0) and (max-width: 959px) {
+}

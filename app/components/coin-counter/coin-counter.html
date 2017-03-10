@@ -1,0 +1,33 @@
+<div flex-gt-sm="25" layout="column">
+    <md-card>
+        <md-card-title>
+            <md-card-title-text class="coin-counter-title">
+                <span class="md-headline">COIN COUNTER</span>
+            </md-card-title-text>
+        </md-card-title>
+
+        <md-card-content>
+            <div flex>
+                <md-grid-list md-cols="2" md-row-height="1:1">
+                    <md-grid-tile ng-repeat="circle in $ctrl.circles">
+                        <div class="coin-counter-circle" id="{{circle.id}}">
+                            <div class="coin-counter-circle-text">
+                                {{ circle.cents }}
+                            </div>
+                        </div>
+                    </md-grid-tile>
+                </md-grid-list>
+            </div>
+
+            <div class="coin-counter-input-container" flex>
+                <md-input-container>
+                    <input type="number" ng-model="$ctrl.numberEntered">
+                </md-input-container>
+            </div>
+
+            <div class="coin-counter-button-container" flex>
+                <md-button class="md-raised md-primary" ng-click="$ctrl.calculateNumber($ctrl.numberEntered)">CALCULATE</md-button>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>
