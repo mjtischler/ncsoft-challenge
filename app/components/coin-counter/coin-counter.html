@@ -10,7 +10,10 @@
             <div flex>
                 <md-grid-list md-cols="2" md-row-height="1:1">
                     <md-grid-tile ng-repeat="circle in $ctrl.circles">
-                        <div class="coin-counter-circle" id="{{circle.id}}">
+                        <span class="coin-counter-badge" id="{{circle.id}}" ng-if="$ctrl.isCalculated">
+                        </span>
+
+                        <div class="coin-counter-circle">
                             <div class="coin-counter-circle-text">
                                 {{ circle.cents }}
                             </div>

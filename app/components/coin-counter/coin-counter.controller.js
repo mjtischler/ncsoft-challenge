@@ -25,6 +25,7 @@ function CoinCounterController() {
 
     // MT: Any default values will be initiated here.
     ctrl.numberEntered = null;
+    ctrl.isCalculated = false;
 
     // MT: Let's define our functions
     ctrl.calculateNumber = calculateNumber;
