@@ -1,4 +1,0 @@
-/* MT: Ideally, this would be a LESS or SASS file. However, for speed of development I'm running this from a local http server without Grunt or Gulp build tasks. */
-
-@media (min-width: 0) and (max-width: 959px) {
-}
