@@ -34,6 +34,12 @@
     background: #d8d8d8;
 }
 
+/* MT: I'm overriding the default Material style here so that the underline on the input is visible in screenshots. */
+.md-input-container.md-default-theme .md-input,
+md-input-container .md-input {
+    border-bottom-color: #878787;
+}
+
 .coin-counter-input-container,
 .coin-counter-button-container {
     text-align: center;
