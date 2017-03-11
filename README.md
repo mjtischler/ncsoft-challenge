@@ -1,7 +1,6 @@
 # NCSOFT Coin Counter Challenge
-## by Matt Tischler ([mjtischler@gmail.com](mailto:mjtischler@gmail.com))
 
-### Hello! I'm Matt
+### Hello! I'm Matt Tischler ([mjtischler@gmail.com](mailto:mjtischler@gmail.com))
 Hey y'all! I appreciate the opportunity to complete this code challenge and I had a great time working toward the solution. I definitely learned a few things along the way, and I appreciate any constructive (and destructive) criticism that you may have about my work.
 
 ### Stack
