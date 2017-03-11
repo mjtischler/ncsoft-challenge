@@ -34,6 +34,7 @@ function CoinCounterController() {
     function calculateNumber(number) {
         // MT: Show the circles. Fun!
         ctrl.isCalculated = true;
+        var remainder = null;
 
         for (var i = 0; i < ctrl.circles.length; i++) {
             ctrl.circles[i].coins = Math.floor(number / ctrl.circles[i].coinValue);

@@ -1,5 +1,5 @@
 # NCSOFT Coin Counter Challenge
-### by Matt Tischler ([mjtischler@gmail.com](mailto:mjtischler@gmail.com))
+## by Matt Tischler ([mjtischler@gmail.com](mailto:mjtischler@gmail.com))
 
 ### Hello! I'm Matt
 Hey y'all! I appreciate the opportunity to complete this code challenge and I had a great time working toward the solution. I definitely learned a few things along the way, and I appreciate any constructive (and destructive) criticism that you may have about my work.
@@ -52,3 +52,4 @@ function calculateNumber(number) {
 ![Mobile View](https://github.com/mjtischler/ncsoft-challenge/blob/master/images/mobile-view.png?raw=true "Mobile View")
 ![Calculated Mobile View](https://github.com/mjtischler/ncsoft-challenge/blob/master/images/mobile-view-calculated.png?raw=true "Calculated Mobile View")
 ![Desktop View](https://github.com/mjtischler/ncsoft-challenge/blob/master/images/desktop-view.png?raw=true "Desktop View")
+=======
