@@ -3,23 +3,23 @@
 function CoinCounterController() {
     var ctrl = this;
 
-    // MT: I'm hardcoding this as a singleton, but normally I'd want this information to be returned from a service call in case we need our circles to be generated dynamically.
+    // MT: I'm hardcoding this as a singleton, but normally I'd want this information to be returned from a service call in case we need our circles to be generated dynamically. This also allows for the changing of the coinValues outside of the scope of the calculateNumber function.
     ctrl.circles = [
         {
-            id: 1,
-            cents: 25
+            coinValue: 25,
+            coins: 0
         },
         {
-            id: 2,
-            cents: 10
+            coinValue: 10,
+            coins: 0
         },
         {
-            id: 3,
-            cents: 5
+            coinValue: 5,
+            coins: 0
         },
         {
-            id: 4,
-            cents: 1
+            coinValue: 1,
+            coins: 0
         }
     ];
 
@@ -27,11 +27,21 @@ function CoinCounterController() {
     ctrl.numberEntered = null;
     ctrl.isCalculated = false;
 
-    // MT: Let's define our functions
+    // MT: Let's define our functions.
     ctrl.calculateNumber = calculateNumber;
 
+    // MT: And here's our vanilla JS function to determine the coin values.
     function calculateNumber(number) {
-        ctrl.numberEntered = number;
+        // MT: Show the circles. Fun!
+        ctrl.isCalculated = true;
+
+        for (var i = 0; i < ctrl.circles.length; i++) {
+            ctrl.circles[i].coins = Math.floor(number / ctrl.circles[i].coinValue);
+
+            remainder = number - ctrl.circles[i].coins * ctrl.circles[i].coinValue;
+
+            number = remainder;
+        }
     }
 }
 
