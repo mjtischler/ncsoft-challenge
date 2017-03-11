@@ -4,28 +4,33 @@
     text-align: center;
 }
 
-.coin-counter-badge {
-    position: absolute;
-    top: 12%;
-    right: 8%;
-    width: 20%;
-    height: 20%;
+.coin-counter-badge,
+.coin-counter-circle {
+    height: 0;
     border-radius: 50%;
+    line-height: 0;
+    text-align: center;
+}
+
+.coin-counter-badge {
+    z-index: 2;
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    width: 24%;
+    padding: 12% 0;
     font-size: 14px;
     color: #ffffff;
-    line-height: 32px;
-    text-align: center;
     background: #222222;
 }
 
 .coin-counter-circle {
+    z-index: 1;
+    position: relative;
     width: 80%;
-    height: 80%;
-    border-radius: 50%;
+    padding: 40% 0;
     font-size: 28px;
     color: #878787;
-    line-height: 120px;
-    text-align: center;
     background: #d8d8d8;
 }
 
