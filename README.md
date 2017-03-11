@@ -1,13 +1,13 @@
 # NCSOFT Coin Counter Challenge
 
 ### Hello! I'm Matt Tischler ([mjtischler@gmail.com](mailto:mjtischler@gmail.com))
-Hey y'all! I appreciate the opportunity to complete this code challenge and I had a great time working toward the solution. I definitely learned a few things along the way, and I appreciate any constructive (and destructive) criticism that you may have about my work.
+Hey y'all! I appreciate the opportunity to complete this code challenge and I had a great time working toward the solution. I definitely learned a few things along the way, and I welcome any constructive (and destructive) criticism that you may have about my work.
 
 ### Stack
-Per the instructions, I wrote the calculate function in vanilla JavaScript. However, I used Angular 1.5+ for the JS framework (and utilized a component architecture for scalability), and I incorporated Angular Material for the UI.
+Per the instructions, I wrote the calculate function in vanilla JavaScript. However, I used Angular 1.5+ for the JS framework and utilized a component architecture for scalability. I also incorporated Angular Material for the UI.
 
 ### Code
-First, I created a singleton array that contains two key parameters: our coin denominations and the coin count for the given input. This array simulates the return from a service call and both the UI and the `calculateNumber` function aren't concerned with its size or parameter values.
+First, I created a singleton array that contains two key parameters: the coin denominations and the coin count for the given input. This array simulates the return from a service call, and both the UI and the `calculateNumber` function aren't concerned with its size or parameter values.
 
 ```JavaScript
 ctrl.circles = [
